@@ -1,0 +1,123 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.task-input {
+  margin: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.task-input input, 
+.task-input select {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+.task-input button {
+  background: #ffcc00;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.task-list {
+  width: 80%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.task-list h2 {
+  margin-bottom: 15px;
+}
+
+.task-list ul {
+  list-style: none;
+}
+
+.task-list li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list li span {
+  font-weight: bold;
+}
+
+.task-list button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.complete-btn {
+  background: #28a745;
+  color: white;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.progress {
+  width: 80%;
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  background: rgba(255,255,255,0.3);
+  border-radius: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+#progressFill {
+  background: #00ff99;
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s;
+}
+
+footer {
+  margin-top: auto;
+  padding: 15px;
+  background: rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
